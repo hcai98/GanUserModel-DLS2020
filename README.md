@@ -44,14 +44,14 @@ Fine-tuning the reward model in an adversarial way helps increase generalizabili
 ![](./presentation/微信图片_20201211083613.png)
 ![](./presentation/微信图片_20201211083551.png)
 
-Pre-training with Shannon Entropy is essential for model convergence. We can see the result deterioated dramatically with the "no pretrain" model.
+Also, we notice that pre-training with Shannon Entropy is essential for model convergence. We can see the result deterioated dramatically with the "no pretrain" model.
 ![](./presentation/微信图片_20201211083556.png)
 ![](./presentation/微信图片_20201211083609.png)
 
 Skipping Pre Training Leads to not only bad generalizability but convergence.
 ![](./presentation/微信图片_20201211083604.png)
 
-Adding batchnormalization layers worsen convergence
+Adding batchnormalization layers worsen convergence.
 ![](./presentation/微信图片_20201211083553.png)
 
 Finally, let's compare the final test results of all models
