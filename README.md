@@ -44,3 +44,19 @@ Fine-tuning the reward model in an adversarial way helps increase generalizabili
 ![](./presentation/微信图片_20201211083613.png)
 ![](./presentation/微信图片_20201211083551.png)
 
+Pre-training with Shannon Entropy is essential for model convergence. We can see the result deterioated dramatically with the "no pretrain" model.
+![](./presentation/微信图片_20201211083556.png)
+![](./presentation/微信图片_20201211083609.png)
+
+Skipping Pre Training Leads to not only bad generalizability but convergence.
+![](./presentation/微信图片_20201211083604.png)
+
+Adding batchnormalization layers worsen convergence
+![](./presentation/微信图片_20201211083553.png)
+
+Finally, let's compare the final test results of all models
+![](./presentation/微信图片_20201211084411.png)
+- Pre-training with Shannon Entropy helps reduce instability in the training process of our GAN user models and leads to better validation scores.
+- Directly training the user models adversarially lead to instability in the training process, potential divergence, and bad generalization results.
+- Models trained using Shannon Entropy improves slowly; however,  fine-tuning adversarially afterwards would restart the progression and obtain better result.
+
