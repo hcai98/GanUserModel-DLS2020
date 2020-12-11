@@ -42,4 +42,5 @@ For more details regarding options for model configuration, check the  `./common
 Fine-tuning the reward model in an adversarial way helps increase generalizability of the resulting model
 
 ![](./presentation/微信图片_20201211083613.png)
+![](./presentation/微信图片_20201211083551.png)
 
